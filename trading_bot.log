@@ -1,0 +1,65 @@
+2025-10-02 11:41:53,256 [INFO] Placing order: BTCUSDT BUY MARKET qty=0.001
+2025-10-02 11:41:53,262 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385513257, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:41:55,073 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:41:55,073 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:41:55,074 [INFO] Order response: {'error': '400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}'}
+2025-10-02 11:42:10,782 [INFO] Placing order: BTCUSDT SELL LIMIT qty=0.001
+2025-10-02 11:42:10,783 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'timestamp': 1759385530783, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false', 'price': 30000.0, 'timeInForce': 'GTC'}
+2025-10-02 11:42:12,035 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:42:12,035 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:42:12,036 [INFO] Order response: {'error': '400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}'}
+2025-10-02 11:42:20,085 [INFO] Placing order: BTCUSDT BUY TWAP qty=0.005
+2025-10-02 11:42:20,086 [INFO] TWAP: 5 slices of 0.001 each, interval=10s
+2025-10-02 11:42:20,087 [INFO] TWAP slice 1/5: placing MARKET order for 0.001 BTCUSDT
+2025-10-02 11:42:20,088 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385540087, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:42:21,540 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:42:21,541 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:42:21,541 [DEBUG] Sleeping 10 seconds before next slice
+2025-10-02 11:42:31,542 [INFO] TWAP slice 2/5: placing MARKET order for 0.001 BTCUSDT
+2025-10-02 11:42:31,543 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385551543, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:42:32,419 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:42:32,420 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:42:32,420 [DEBUG] Sleeping 10 seconds before next slice
+2025-10-02 11:42:42,421 [INFO] TWAP slice 3/5: placing MARKET order for 0.001 BTCUSDT
+2025-10-02 11:42:42,422 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385562422, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:42:43,386 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:42:43,386 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:42:43,387 [DEBUG] Sleeping 10 seconds before next slice
+2025-10-02 11:42:53,388 [INFO] TWAP slice 4/5: placing MARKET order for 0.001 BTCUSDT
+2025-10-02 11:42:53,388 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385573388, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:42:53,808 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:42:53,808 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:42:53,809 [DEBUG] Sleeping 10 seconds before next slice
+2025-10-02 11:43:03,810 [INFO] TWAP slice 5/5: placing MARKET order for 0.001 BTCUSDT
+2025-10-02 11:43:03,811 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385583811, 'recvWindow': 5000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:43:04,678 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:43:04,678 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:43:04,679 [INFO] TWAP results collected.
+2025-10-02 11:44:29,260 [INFO] Placing order: BTCUSDT BUY MARKET qty=0.001
+2025-10-02 11:44:29,262 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385669261, 'recvWindow': 10000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:44:30,677 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:44:30,677 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:44:30,679 [INFO] Order response: {'error': '400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}'}
+2025-10-02 11:45:02,654 [INFO] Placing order: BTCUSDT BUY MARKET qty=0.001
+2025-10-02 11:45:02,655 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385702655, 'recvWindow': 10000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:45:12,166 [DEBUG] Response [400]: {"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+2025-10-02 11:45:12,166 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:45:12,167 [INFO] Order response: {'error': '400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}'}
+2025-10-02 11:46:59,522 [INFO] Server time offset: 24962 ms
+2025-10-02 11:46:59,523 [INFO] Placing order: BTCUSDT BUY MARKET qty=0.001
+2025-10-02 11:46:59,523 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1759385844485, 'recvWindow': 10000, 'reduceOnly': 'false', 'closePosition': 'false'}
+2025-10-02 11:47:00,418 [DEBUG] Response [500]: {"code":-1000,"msg":"An unknown error occurred while processing the request."}
+2025-10-02 11:47:00,418 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 500 Server Error: Internal Server Error for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:47:00,419 [INFO] Order response: {'error': '500 Server Error: Internal Server Error for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1000,"msg":"An unknown error occurred while processing the request."}'}
+2025-10-02 11:47:44,522 [INFO] Server time offset: 24966 ms
+2025-10-02 11:47:44,522 [INFO] Placing order: BTCUSDT BUY LIMIT qty=0.001
+2025-10-02 11:47:44,523 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'timestamp': 1759385889489, 'recvWindow': 10000, 'reduceOnly': 'false', 'closePosition': 'false', 'price': 30000.0, 'timeInForce': 'GTC'}
+2025-10-02 11:47:45,158 [DEBUG] Response [400]: {"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2025-10-02 11:47:45,159 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:47:45,159 [INFO] Order response: {'error': '400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-4164,"msg":"Order\'s notional must be no smaller than 100 (unless you choose reduce only)."}'}
+2025-10-02 11:48:20,382 [INFO] Server time offset: 24863 ms
+2025-10-02 11:48:20,383 [INFO] Placing order: BTCUSDT BUY LIMIT qty=0.005
+2025-10-02 11:48:20,383 [DEBUG] POST https://testnet.binancefuture.com/fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.005, 'timestamp': 1759385925246, 'recvWindow': 10000, 'reduceOnly': 'false', 'closePosition': 'false', 'price': 30000.0, 'timeInForce': 'GTC'}
+2025-10-02 11:48:21,019 [DEBUG] Response [500]: {"code":-1000,"msg":"An unknown error occurred while processing the request."}
+2025-10-02 11:48:21,020 [ERROR] HTTP error during POST https://testnet.binancefuture.com/fapi/v1/order : 500 Server Error: Internal Server Error for url: https://testnet.binancefuture.com/fapi/v1/order
+2025-10-02 11:48:21,020 [INFO] Order response: {'error': '500 Server Error: Internal Server Error for url: https://testnet.binancefuture.com/fapi/v1/order', 'raw': '{"code":-1000,"msg":"An unknown error occurred while processing the request."}'}
